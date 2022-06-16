@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scable=no, 
+  iniial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script> 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+  <script src="data.js"></script> 
+  <script src="my.js"></script>  -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <script src="data.js"></script>
+    <script src="my.js"></script>
+
+    <title>Страви різних країн світу!</title>
+  </head>
+  <body>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Меню</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <section id="main">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6" offset-md="3">
+            <ion-button id="add" color="success" size="large">
+              <ion-icon name="add-circle-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" size-md="6" offset-md="3">
+            <ion-list id="list">
+              <ion-list-header>
+                <ion-label>Меню</ion-label>
+              </ion-list-header>
+              <ion-item>
+                <ion-label>Italian food</ion-label>
+                <ion-button
+                  class="edit"
+                  color="primary"
+                  size="medium"
+                  rowid="${row.name}"
+                >
+                  <ion-icon name="create"></ion-icon
+                ></ion-button>
+                <ion-button
+                  class="delete"
+                  color="danger"
+                  size="medium"
+                  rowid="${row.name}"
+                >
+                  <ion-icon name="trash"></ion-icon
+                ></ion-button>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+    <section id="edit">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6" offset-md="3">
+            <ion-item>
+              <ion-label position="floating">Назва</ion-label>
+              <ion-input id="name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Тип страви</ion-label>
+              <ion-input id="type"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Вага</ion-label>
+              <ion-input id="weight"></ion-input>
+            </ion-item>
+            <ion-button
+              id="save"
+              color="primary"
+              size="medium"
+              float-right
+              style="margin-top: 20px"
+            >
+              <ion-icon name="checkmark"></ion-icon
+            ></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+  </body>
+</html>

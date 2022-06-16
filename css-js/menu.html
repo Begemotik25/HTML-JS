@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scable=no, 
+  iniial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="data.js"></script>
+    <script src="my.js"></script>
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark text-white">
+      <h3 class="m-2">Меню</h3>
+    </nav>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-menu">
+              <label for="name">Назва</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Назва"
+              />
+            </div>
+            <div class="form-menu">
+              <label for="type">Тип</label>
+              <input
+                type="text"
+                class="form-control"
+                id="type"
+                placeholder="Тип"
+              />
+            </div>
+            <div class="form-menu">
+              <label for="weight">Вага</label>
+              <input
+                type="text"
+                class="form-control"
+                id="weight"
+                placeholder="Вага"
+              />
+            </div>
+            <button type="button" id="save" class="mt-2 btn btn-secondary">
+              Зберегти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
